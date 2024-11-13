@@ -1,9 +1,22 @@
+:root{
+    --main-yellow:#FBD600;
+    --main-text:#24303E;
+    --green-text:#24554A;
+    --blue-text:#052C3B;
+    --grey-tilte-occupation-text:#A7AAAD;
+    --grey-text:#5B636D;
+    --grey-text-general:#808397;
+    --peoplename-text:#24303E;
+    --shadow-yellow:#FAD400;
+    --shadow-red:#FE7766;
+    --footer-red:#90D4C6;
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Fraunces", serif;
 }
 img{
     display: block;
@@ -18,4 +31,154 @@ ul{
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+.box-transformbrand{
+    padding: 24px;
+    text-align: center;
+    height: 437px;
+    width: 100%;
+}
+.box-transformbrand span{
+    height: 309px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+}
+.box-transformbrand h2{
+    font-size: 32px;
+    letter-spacing: -0.23px;
+    font-weight: 700;
+}
+.box-transformbrand p{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.13px;
+    color: var(--grey-text-general);
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+}
+.box-transformbrand a{
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.yellow-outline::before{
+    content:" ";
+    position: absolute;
+    width: 137px;
+    height: 10px;
+    background-color: var(--shadow-yellow);
+    left: calc( 50% - 68px);
+    border-radius: 28px;
+    bottom: 25px;
+}
+.red-outline::before{
+    content:" ";
+    position: absolute;
+    width: 137px;
+    height: 10px;
+    background-color: var(--shadow-red);
+    left: calc( 50% - 68px);
+    border-radius: 28px;
+    bottom: 25px;
+}
+.cherry-bg{
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size:cover;
+    padding: 24px;
+    padding-bottom: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    color: var(--green-text);
+}
+.orange-bg{
+    background-image: url(../images/mobile/image-photography.jpg);
+    color: var(--blue-text);
+}
+.orange-bg h2, .cherry-bg h2{
+    letter-spacing: -0.2px;
+    font-size: 28px;
+    font-weight: 900;
+}
+.orange-bg p, .cherry-bg p{
+    font-family: "Barlow", sans-serif;
+    letter-spacing: -0.11px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.testimonials{
+    padding: 24px;
+    width: 100%;
+    height: 1260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.testimonials-title{
+    color: #A7AAAD;
+    font-size: 16px;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.testimony{
+    height: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimony{
+    width: 327px;
+    margin-inline: auto;
+    line-height: 32px;
+    letter-spacing: -0.31px;
+    font-size: 18px;
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    color: var(--grey-text);
+}
+.testimony span{
+    font-size: 14px;
+    color: var(--grey-tilte-occupation-text);
+}
+.img-testimony{
+    margin-inline: auto;
+    width: 72px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 18px;
+    font-weight: 900;
+    color:var(--peoplename-text);
+}
+.collage-img{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: var(--footer-red);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+.buttons-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.social-icon{
+    width: 20px;
+    height: 20px;
 }
